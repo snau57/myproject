@@ -6,6 +6,14 @@ fun main(args: Array<String>) {  //快捷鍵 maina + Tab鍵。如不需接收執
 //    Human().hello()  //Kotlin呼叫類別不用new，可直接呼叫
     val h = Human()  //Kotlin使用 val(value不可再改變值)及 var(variable可改變值)來定義物件
         h.hello()
+
+    //Kotlin沒有基本資料型態，只有類別(物件)的資料型態(首字大寫)
+    //Kotlin的變數設定用 val(value，不可改變) 及 var(variable，可被改變)
+    val age1 = 19;  //變數型態不用指定，可自動推斷
+    val age2 : Int = 19;  //如要特別指定 val 名稱：型態 = 值
+    var weight = 66.5;
+    var name : String;
+    name = "Hank";
 }
 
 class Human {  //增加Kotlin的類別不用另存成檔案
